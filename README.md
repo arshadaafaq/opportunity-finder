@@ -4,6 +4,10 @@
 
 You describe yourself in plain English ("I'm an AI engineer looking for freelance projects") and Client Radar does the rest: it figures out what to search for, pulls live opportunities from multiple sources, uses an LLM to keep only the real, well-fitting ones, extracts emails where present, and writes a tailored first message for each.
 
+![Client Radar screenshot](docs/screenshot.png)
+
+Each result shows a **fit score**, the **engagement type** (freelance / contract / full-time), the **hiring contact** (email or a DM link), and a **ready-to-send draft message**.
+
 ## What it does
 
 1. **Understands your profile** — an LLM turns free text into search terms + your offer + desired engagement (freelance / contract / full-time).
