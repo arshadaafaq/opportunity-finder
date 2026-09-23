@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+server.log
+*.json
+
+# private strategy docs (keep out of public repo)
+BUSINESS_PLAN.md
+PLAN.md
+opportunities.md

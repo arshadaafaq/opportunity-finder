@@ -1,0 +1,36 @@
+# ---- WHO YOU ARE (your offer) ----
+# This is what the AI matches opportunities against. Edit freely.
+offer:
+  what_i_do: >
+    I build AI agents, RAG chatbots and workflow automations for businesses -
+    document/invoice processing, customer-support bots, ask-your-data assistants,
+    and internal Copilot-style tools. 5+ years, ex-Optum/Tesco.
+  ideal_customer: >
+    Founders, small agencies, and SMBs who are asking for help with AI,
+    automation, chatbots, n8n, LangChain/LangGraph, or hiring a freelance AI engineer.
+  location_focus: worldwide   # e.g. "India", "US", "worldwide"
+
+# ---- WHERE TO HUNT (free sources, no account risk) ----
+sources:
+  reddit:
+    enabled: true
+    subreddits: [forhire, hiring, jobbit, automation, n8n, artificial, SaaS, Entrepreneur, smallbusiness]
+    # buying-intent phrases to search for
+    queries:
+      - "looking for AI"
+      - "need automation"
+      - "hire AI developer"
+      - "build a chatbot"
+      - "n8n developer"
+      - "automate my"
+    max_per_query: 25
+    hours_back: 72
+
+# ---- THE AI BRAIN ----
+llm:
+  # OpenRouter (you already use this). Put key in a .env file as OPENROUTER_API_KEY=...
+  model: "anthropic/claude-3.5-sonnet"
+  min_score: 6          # only surface opportunities scoring >= this (0-10)
+
+output:
+  file: "opportunities.md"
